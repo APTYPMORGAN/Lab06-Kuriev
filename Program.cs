@@ -103,38 +103,38 @@
 // }
 
 
-// Console.WriteLine("Игра: Угадай число!");
-// int secret = 42;
-// for (int i = 0; i <= 6; i++){
-//     int number = Convert.ToInt32(Console.ReadLine());
-//     if (i == 4 && number != secret){
-//         Console.WriteLine("");
-//         Console.WriteLine("Вы проиграли, число было 42!");
-//         break;
-//     }
-//     else{
-//         if (number == secret){
-//             Console.WriteLine("");
-//             Console.WriteLine($"Победа! Попыток: {i + 1}!");
-//             break;
-//         } else if (number > secret){
-//             Console.WriteLine("Загаданное число меньше!");
-//         } else if (number < secret){
-//             Console.WriteLine("Загаданное число больше!");
-//         }
-//     }
-// }
-
-
-Console.Write("Введите целое положительное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int sum = 0;
-int count = 0;
-while (number > 0)
-{
-    count++;
-    sum += number % 10;
-    number = number / 10;
+Console.WriteLine("Игра: Угадай число!");
+int secret = 42;
+for (int i = 0; i <= 6; i++){
+    int number = Convert.ToInt32(Console.ReadLine());
+    if (i == 4 && number != secret){
+        Console.WriteLine("");
+        Console.WriteLine("Вы проиграли, число было 42!");
+        break;
+    }
+    else{
+        if (number == secret){
+            Console.WriteLine("");
+            Console.WriteLine($"Победа! Попыток: {i + 1}!");
+            break;
+        } else if (number > secret){
+            Console.WriteLine("Загаданное число меньше!");
+        } else if (number < secret){
+            Console.WriteLine("Загаданное число больше!");
+        }
+    }
 }
-Console.WriteLine($"Сумма цифр в вашем числе = {sum}");
-Console.WriteLine($"Количество цифр в вашем числе = {count}");
+
+
+// Console.Write("Введите целое положительное число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int sum = 0;
+// int count = 0;
+// while (number > 0)
+// {
+//     count++;
+//     sum += number % 10;
+//     number = number / 10;
+// }
+// Console.WriteLine($"Сумма цифр в вашем числе = {sum}");
+// Console.WriteLine($"Количество цифр в вашем числе = {count}");
